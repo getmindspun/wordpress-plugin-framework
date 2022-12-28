@@ -7,7 +7,6 @@ use mindspun\framework\Registry;
 use PHPUnit\Framework\TestCase;
 use helpers\Hello;
 use helpers\HelloProvider;
-use stdClass;
 
 /**
  * Tests the Facade class

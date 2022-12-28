@@ -8,4 +8,8 @@ use mindspun\framework\facades\Globals;
 /**
  * @method static string|array str_replace(array|string $search, array|string $replace, string|array $subject, int &$count = null)
  */
-class MockGlobals extends Globals {}
+class MockGlobals extends Globals {
+    protected static function get_provider_alias(): string {
+        return 'globals';
+    }
+}

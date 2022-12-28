@@ -1,0 +1,20 @@
+{
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.7",
+        "phpcompatibility/phpcompatibility-wp": "^2.1",
+        "mockery/mockery": "^1.5",
+        "wp-coding-standards/wpcs": "^2.3",
+        "phpunit/phpunit": "^9.5",
+        "humbug/php-scoper": "^0.17.5",
+        "monolog/monolog": "^2.8"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../"
+        }
+    ],
+    "require": {
+        "mindspun/wordpress-plugin-framework": "dev-master"
+    }
+}

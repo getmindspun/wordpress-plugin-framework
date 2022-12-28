@@ -28,7 +28,8 @@ abstract class Provider {
      * @param mixed  $args Any arguments passed to the underlying method.
      *
      * @return Provider
-     * @throws Exception Thrown when the method doesn't exist.
+     * @throws Exception Thrown if the method is not defined.
+     * @noinspection PhpMethodParametersCountMismatchInspection
      */
     public static function __callStatic( string $method, $args ) {
         if ( 'provide' === $method ) {
