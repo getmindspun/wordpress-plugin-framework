@@ -1,9 +1,9 @@
 <?php
 
-use mindspun\framework\Autoloader;
+use Mindspun\Framework\Autoloader;
 
-require dirname( __FILE__, 2 ) . '/includes/Autoloader.php';
+require dirname( __FILE__, 2 ) . '/src/Autoloader.php';
 
 $root = dirname( __FILE__, 2 );
-Autoloader::autoload( 'mindspun\framework', $root . '/includes' );
-Autoloader::autoload( 'helpers', __DIR__ . '/helpers' );
+Autoloader::autoload( 'Mindspun\Framework', $root . '/src' );
+Autoloader::autoload( 'Helpers', __DIR__ . '/helpers' );

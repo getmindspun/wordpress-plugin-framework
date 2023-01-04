@@ -1,9 +1,9 @@
 <?php
 // phpcs:ignoreFile Generic.Commenting.DocComment.MissingShort
 declare(strict_types=1);
-namespace helpers;
+namespace Helpers;
 
-use mindspun\framework\Facade;
+use Mindspun\Framework\Facade;
 
 /**
  * @method static string hello()

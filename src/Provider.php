@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace mindspun\framework;
+namespace Mindspun\Framework;
 
 use Exception;
 

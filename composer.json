@@ -2,6 +2,9 @@
     "name": "mindspun/wordpress-plugin-framework",
     "description": "Framework for creating professional-grade WordPress plugins.",
     "license": ["MIT"],
+    "require": {
+        "php": ">=7.4"
+    },
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.7",
         "phpcompatibility/phpcompatibility-wp": "^2.1",

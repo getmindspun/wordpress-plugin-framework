@@ -1,9 +1,9 @@
 <?php
 declare( strict_types=1 );
 
-namespace unit;
+namespace Unit;
 
-use mindspun\framework\Registry;
+use Mindspun\Framework\Registry;
 use PHPUnit\Framework\TestCase;
 use stdClass;
 

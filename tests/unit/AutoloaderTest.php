@@ -1,10 +1,10 @@
 <?php
 declare( strict_types=1 );
 
-namespace unit;
+namespace Unit;
 
-use mindspun\framework\Autoloader;
-use mindspun\framework\Utils;
+use Mindspun\Framework\Autoloader;
+use Mindspun\Framework\Utils;
 use PHPUnit\Framework\TestCase;
 
 

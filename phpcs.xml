@@ -2,7 +2,7 @@
 <ruleset name="wpfw">
     <description>wpfw Coding Standards</description>
 
-    <file>includes</file>
+    <file>src</file>
     <file>tests</file>
     <exclude-pattern>*/vendor/*</exclude-pattern>
 

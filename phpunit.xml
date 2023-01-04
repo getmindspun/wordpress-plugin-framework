@@ -15,12 +15,8 @@
     </testsuites>
     <coverage>
         <include>
-            <directory suffix=".php">includes</directory>
+            <directory suffix=".php">src</directory>
         </include>
-        <exclude>
-            <directory suffix=".php">includes/vendor</directory>
-            <file>includes/providers/AssetsProvider.php</file>
-        </exclude>
         <report>
             <html outputDirectory="build/coverage" highLowerBound="100"/>
         </report>
