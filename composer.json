@@ -11,5 +11,8 @@
         "mockery/mockery": "^1.5",
         "wp-coding-standards/wpcs": "^2.3",
         "phpunit/phpunit": "^9.5"
+    },
+    "archive": {
+        "exclude": ["/examples"]
     }
 }
