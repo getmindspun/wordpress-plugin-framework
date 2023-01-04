@@ -1,8 +1,8 @@
 <?php
 declare(strict_types=1);
-namespace mindspun\framework\facades;
+namespace Mindspun\Framework\facades;
 
-use mindspun\framework\Facade;
+use Mindspun\Framework\Facade;
 
 /**
  * Globals pseudo-facade.

@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
-namespace mindspun\framework\providers;
+namespace Mindspun\Framework\Providers;
 
-use mindspun\framework\Provider;
-use mindspun\framework\Registry;
+use Mindspun\Framework\Provider;
+use Mindspun\Framework\Registry;
 
 /**
  * Globals provider.

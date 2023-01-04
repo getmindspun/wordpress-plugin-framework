@@ -3,10 +3,10 @@ declare( strict_types=1 );
 
 namespace unit;
 
-use mindspun\framework\Registry;
+use Mindspun\Framework\Registry;
 use PHPUnit\Framework\TestCase;
-use helpers\Hello;
-use helpers\HelloProvider;
+use Helpers\Hello;
+use Helpers\HelloProvider;
 
 /**
  * Tests the Facade class

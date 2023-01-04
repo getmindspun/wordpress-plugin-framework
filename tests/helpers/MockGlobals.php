@@ -1,9 +1,9 @@
 <?php
 // phpcs:ignoreFile Generic.Commenting.DocComment.MissingShort
 declare(strict_types=1);
-namespace helpers;
+namespace Helpers;
 
-use mindspun\framework\facades\Globals;
+use Mindspun\Framework\Facades\Globals;
 
 /**
  * @method static string|array str_replace(array|string $search, array|string $replace, string|array $subject, int &$count = null)
