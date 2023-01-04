@@ -14,5 +14,8 @@
     },
     "archive": {
         "exclude": ["/examples"]
+    },
+    "autoload": {
+        "psr-4": {"Mindspun\\Framework\\": "src/"}
     }
 }
