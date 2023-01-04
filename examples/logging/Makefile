@@ -2,6 +2,10 @@ VENDOR_PREFIX ?= examples\\logging\\vendor
 all: lint coverage
 .PHONY: all
 
+bundle: all
+	zip -r build/logging.zip *.php includes/ vendor_prefixed/
+.PHONY: bundle
+
 lint:
 	php vendor/bin/phpcbf || [ $$? -eq 1 ]
 	php vendor/bin/phpcs
