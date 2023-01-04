@@ -13,13 +13,13 @@
     },
     "scripts": {
         "strauss": [
-            "vendor/bin/strauss -vvv"
+            "vendor/bin/strauss"
         ],
         "post-install-cmd": [
-            "@strauss"
+            "rm -rf vendor/mindspun/wordpress-plugin-framework/examples"
         ],
         "post-update-cmd": [
-            "@strauss"
+            "rm -rf vendor/mindspun/wordpress-plugin-framework/examples"
         ]
     },
     "extra": {

@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/getmindspun/wordpress-plugin-framework.git",
-                "reference": "bd4432b74566eae96059420ccfd97da5c48412f1"
+                "reference": "9da0a0c88011547ddb9465d8874d394d1e164fcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getmindspun/wordpress-plugin-framework/zipball/bd4432b74566eae96059420ccfd97da5c48412f1",
-                "reference": "bd4432b74566eae96059420ccfd97da5c48412f1",
+                "url": "https://api.github.com/repos/getmindspun/wordpress-plugin-framework/zipball/9da0a0c88011547ddb9465d8874d394d1e164fcb",
+                "reference": "9da0a0c88011547ddb9465d8874d394d1e164fcb",
                 "shasum": ""
             },
             "require": {
@@ -41,7 +41,7 @@
                 "issues": "https://github.com/getmindspun/wordpress-plugin-framework/issues",
                 "source": "https://github.com/getmindspun/wordpress-plugin-framework/tree/master"
             },
-            "time": "2023-01-04T15:06:57+00:00"
+            "time": "2023-01-04T17:56:31+00:00"
         },
         {
             "name": "monolog/monolog",
