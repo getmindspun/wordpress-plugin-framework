@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
-namespace examples\logging\providers;
+namespace Examples\Logging\Providers;
 
-use examples\logging\vendor\mindspun\framework\Registry;
-use examples\logging\vendor\mindspun\framework\Utils;
-use examples\logging\vendor\Monolog\Formatter\LineFormatter;
-use examples\logging\vendor\Monolog\Handler\RotatingFileHandler;
-use examples\logging\vendor\Monolog\Logger;
+use Examples\Logging\Vendor\Mindspun\Framework\Registry;
+use Examples\Logging\Vendor\Mindspun\Framework\Utils;
+use Examples\Logging\Vendor\Monolog\Formatter\LineFormatter;
+use Examples\Logging\Vendor\Monolog\Handler\RotatingFileHandler;
+use Examples\Logging\Vendor\Monolog\Logger;
 
 /**
  * Logger provider using Monolog.

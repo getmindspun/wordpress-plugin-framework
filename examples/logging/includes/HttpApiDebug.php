@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace examples\logging;
+namespace Examples\Logging;
 
-use examples\logging\facades\Globals;
-use examples\logging\facades\Logger;
+use Examples\Logging\Facades\Globals;
+use Examples\Logging\Facades\Logger;
 
 /**
  * The http_api_debug hook.

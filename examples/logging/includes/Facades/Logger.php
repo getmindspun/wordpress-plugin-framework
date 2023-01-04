@@ -2,7 +2,7 @@
 declare(strict_types=1);
 namespace examples\logging\facades;
 
-use examples\logging\vendor\mindspun\framework\Facade;
+use Examples\Logging\Vendor\Mindspun\Framework\Facade;
 
 /**
  * PSR4 Logger facade.

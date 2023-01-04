@@ -13,13 +13,14 @@
     },
     "scripts": {
         "strauss": [
+            "rm -rf vendor/mindspun/wordpress-plugin-framework/examples",
             "vendor/bin/strauss"
         ],
         "post-install-cmd": [
-            "rm -rf vendor/mindspun/wordpress-plugin-framework/examples"
+            "@strauss"
         ],
         "post-update-cmd": [
-            "rm -rf vendor/mindspun/wordpress-plugin-framework/examples"
+            "@strauss"
         ]
     },
     "extra": {
@@ -28,7 +29,7 @@
             "namespace_prefix": "examples\\logging\\vendor\\",
             "classmap_prefix": "examples_logging_vendor_",
             "constant_prefix": "ELV_",
-            "delete_vendor_files": false
+            "delete_vendor_files": true
         }
     },
     "minimum-stability": "dev"

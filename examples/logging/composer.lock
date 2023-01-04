@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b1d0e68089298c200654ae2ada1fef4f",
+    "content-hash": "0377ff5eb053e7cd728f0ba328012068",
     "packages": [
         {
             "name": "mindspun/wordpress-plugin-framework",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/getmindspun/wordpress-plugin-framework.git",
-                "reference": "9da0a0c88011547ddb9465d8874d394d1e164fcb"
+                "reference": "02905e127d2de963a14484b7c5d17481d930af28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getmindspun/wordpress-plugin-framework/zipball/9da0a0c88011547ddb9465d8874d394d1e164fcb",
-                "reference": "9da0a0c88011547ddb9465d8874d394d1e164fcb",
+                "url": "https://api.github.com/repos/getmindspun/wordpress-plugin-framework/zipball/02905e127d2de963a14484b7c5d17481d930af28",
+                "reference": "02905e127d2de963a14484b7c5d17481d930af28",
                 "shasum": ""
             },
             "require": {
@@ -32,6 +32,11 @@
             },
             "default-branch": true,
             "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mindspun\\Framework\\": "src/"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -41,7 +46,7 @@
                 "issues": "https://github.com/getmindspun/wordpress-plugin-framework/issues",
                 "source": "https://github.com/getmindspun/wordpress-plugin-framework/tree/master"
             },
-            "time": "2023-01-04T17:56:31+00:00"
+            "time": "2023-01-04T19:06:42+00:00"
         },
         {
             "name": "monolog/monolog",

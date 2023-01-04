@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace unit;
+namespace Unit;
 
-use examples\logging\vendor\mindspun\framework\Registry;
-use examples\logging\vendor\mindspun\framework\Utils;
+use Examples\Logging\Vendor\Mindspun\Framework\Registry;
+use Examples\Logging\Vendor\Mindspun\Framework\Utils;
 use Mockery;
 
 class TestCase extends \PHPUnit\Framework\TestCase {

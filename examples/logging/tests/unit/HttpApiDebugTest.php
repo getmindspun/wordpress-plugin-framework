@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace unit;
+namespace Unit;
 
 use examples\logging\HttpApiDebug;
 use Mockery;
