@@ -7,4 +7,4 @@ $root = dirname( __FILE__, 2 );
 require $root . '/autoload.php';
 require $root . '/vendor/autoload.php';
 
-Autoloader::autoload( 'unit', __DIR__ . '/unit' );
+Autoloader::autoload( 'Unit', __DIR__ . '/Unit' );

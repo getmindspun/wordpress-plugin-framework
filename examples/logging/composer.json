@@ -26,8 +26,8 @@
     "extra": {
         "strauss": {
             "target_directory": "vendor_prefixed",
-            "namespace_prefix": "examples\\logging\\vendor\\",
-            "classmap_prefix": "examples_logging_vendor_",
+            "namespace_prefix": "Examples\\Logging\\Vendor\\",
+            "classmap_prefix": "Examples_Logging_Vendor_",
             "constant_prefix": "ELV_",
             "delete_vendor_files": true
         }

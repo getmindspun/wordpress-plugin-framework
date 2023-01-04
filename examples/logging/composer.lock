@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0377ff5eb053e7cd728f0ba328012068",
+    "content-hash": "61fdaee81b25052800f8ee37e0468fe8",
     "packages": [
         {
             "name": "mindspun/wordpress-plugin-framework",

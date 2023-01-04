@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Unit;
 
-use examples\logging\HttpApiDebug;
+use Examples\Logging\HttpApiDebug;
 use Mockery;
 
 class HttpApiDebugTest extends TestCase {
