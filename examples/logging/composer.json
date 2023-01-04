@@ -7,19 +7,13 @@
         "phpunit/phpunit": "^9.5",
         "brianhenryie/strauss": "^0.12.0"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/getmindspun/wordpress-plugin-framework.git"
-        }
-    ],
     "require": {
         "monolog/monolog": "^2.8",
         "mindspun/wordpress-plugin-framework": "dev-master"
     },
     "scripts": {
         "strauss": [
-            "vendor/bin/strauss"
+            "vendor/bin/strauss -vvv"
         ],
         "post-install-cmd": [
             "@strauss"
@@ -34,7 +28,8 @@
             "namespace_prefix": "examples\\logging\\vendor\\",
             "classmap_prefix": "examples_logging_vendor_",
             "constant_prefix": "ELV_",
-            "delete_vendor_files": true
+            "delete_vendor_files": false
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
