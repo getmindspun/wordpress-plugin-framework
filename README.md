@@ -56,6 +56,13 @@ extends `Mindspun\Framework\Facades\Globals` and then has an empty body.
 The purpose of this class is to add PHP doc `@method` comments with the globals you use
 to assist your editor.  See the 'Globals' class in the 'examples' directory for an example.
 
+## Motivation
+There are at least six other GitHub projects with the name 'wordpress-plugin-framework', so why one more?
+
+* It's just plain difficult to get 100% code coverage for a plugin of any complexity, and we consider that a minimum
+requirement for release.  This approach fixes that.
+* Just look at any of the older plugins on [wordpress.org/plugins/,](https://wordpress.org/plugins/)
+and you'll see that it's really difficult to prevent a plugin from turning into spaghetti code as it grows. This approach prevents that (mostly, care must still be taken).
 
 ## Development
 
