@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace examples\logging\facades;
+namespace Examples\Logging\Facades;
 
 use Examples\Logging\Vendor\Mindspun\Framework\Facade;
 

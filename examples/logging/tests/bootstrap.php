@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-use examples\logging\vendor\mindspun\framework\Autoloader;
+use Examples\Logging\Vendor\Mindspun\Framework\Autoloader;
 
 $root = dirname( __FILE__, 2 );
 require $root . '/autoload.php';

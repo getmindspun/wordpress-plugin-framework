@@ -9,10 +9,10 @@ declare(strict_types=1);
  * Author URI: https://www.mindspun.com
  */
 
-use examples\logging\providers\LoggerProvider;
-use examples\logging\vendor\mindspun\framework\providers\GlobalsProvider;
-use examples\logging\vendor\mindspun\framework\Utils;
-use examples\logging\vendor\Monolog\Logger;
+use Examples\Logging\Providers\LoggerProvider;
+use Examples\Logging\Vendor\Mindspun\Framework\Providers\GlobalsProvider;
+use Examples\Logging\Vendor\Mindspun\Framework\Utils;
+use Examples\Logging\Vendor\Monolog\Logger;
 
 
 require_once( __DIR__ . '/autoload.php' );
@@ -22,9 +22,9 @@ require_once( __DIR__ . '/autoload.php' );
     $path = __DIR__ . '/logs/api.log';
     Utils::ensure_dir( dirname( $path ) );
 
-    LoggerProvider::provide(Logger::INFO, $path);
+    LoggerProvider::provide( Logger::INFO, $path );
     GlobalsProvider::provide();
 
-    /** @noinspection PhpUndefinedFunctionInspection */
-    add_action( 'http_api_debug', '\examples\logging\HttpApiDebug::action', 10, 5);
+    /* @noinspection PhpUndefinedFunctionInspection */
+    add_action( 'http_api_debug', '\Examples\Logging\HttpApiDebug::action', 10, 5 );
 } )();

@@ -1,4 +1,3 @@
-VENDOR_PREFIX ?= examples\\logging\\vendor
 all: lint coverage
 .PHONY: all
 
