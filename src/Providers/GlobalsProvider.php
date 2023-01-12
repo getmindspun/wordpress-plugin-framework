@@ -32,4 +32,38 @@ class GlobalsProvider extends Provider {
     public function __call( string $method, $args ) {
         return call_user_func( $method, ...$args );
     }
+
+    /**
+     * PHP die() wrapper.
+     *
+     * Language constructs - like die() - cannot be passed to call_user_function
+     * so they are explicitly declared.
+     *
+     * @param int|string $status Optional status.
+     * @return void
+     *
+     * @codeCoverageIgnore
+     */
+    public function die( $status = '' ) {
+        // @codingStandardsIgnoreStart
+        die( $status );
+        // @codingStandardsIgnoreEnd
+    }
+
+    /**
+     * PHP exit() wrapper.
+     *
+     * Language constructs - like exit() - cannot be passed to call_user_function
+     * so they are explicitly declared.
+     *
+     * @param int|string $status Optional status.
+     * @return void
+     *
+     * @codeCoverageIgnore
+     */
+    public function exit( $status = '' ) {
+        // @codingStandardsIgnoreStart
+        exit( $status );
+        // @codingStandardsIgnoreEnd
+    }
 }

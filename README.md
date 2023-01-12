@@ -27,7 +27,7 @@ The autoload method registers a namespace and associates the directory containin
 ```
 autoload( string $namespace, string $dir, string $type = 'psr4' )
 ```
-The `$type` parameter also accepts 'wordpress' or 'wp' in which case the WordPress file namings
+The `$type` parameter also accepts `wordpress` or `wp` in which case the WordPress file namings
 scheme is used - i.e. with 'class-' filenames etc.
 
 ## Usage
