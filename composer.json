@@ -9,7 +9,7 @@
         "squizlabs/php_codesniffer": "^3.7",
         "phpcompatibility/phpcompatibility-wp": "^2.1",
         "mockery/mockery": "^1.5",
-        "wp-coding-standards/wpcs": "^2.3",
+        "wp-coding-standards/wpcs": "^3.0",
         "phpunit/phpunit": "^9.5"
     },
     "archive": {
@@ -17,5 +17,10 @@
     },
     "autoload": {
         "psr-4": {"Mindspun\\Framework\\": "src/"}
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     }
 }

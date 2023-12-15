@@ -7,9 +7,9 @@ lint:
 .PHONY: lint
 
 test:
-	phpunit --no-coverage --stderr --testdox
+	./vendor/bin/phpunit --no-coverage --stderr --testdox
 .PHONY: test
 
 coverage:
-	phpunit --coverage-text
+	./vendor/bin/phpunit --coverage-text
 .PHONY: coverage

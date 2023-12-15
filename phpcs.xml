@@ -15,7 +15,7 @@
         <!-- Exclude any rules here -->
         <exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
         <exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
-        <exclude name="WordPress.PHP.DisallowShortTernary"/>
+        <exclude name="Universal.Operators.DisallowShortTernary"/>
         <exclude name="Generic.WhiteSpace.DisallowSpaceIndent"/>
         <exclude name="Squiz.Commenting.FileComment.Missing"/>
     </rule>

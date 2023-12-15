@@ -29,7 +29,6 @@ abstract class Provider {
      *
      * @return Provider
      * @throws Exception Thrown if the method is not defined.
-     * @noinspection PhpMethodParametersCountMismatchInspection
      */
     public static function __callStatic( string $method, $args ) {
         if ( 'provide' === $method ) {
@@ -38,6 +37,6 @@ abstract class Provider {
 
             return $instance;
         }
-        throw new Exception( 'Method ' . $method . ' is not supported.' );
+        throw new Exception( 'Method is not supported.' );
     }
 }

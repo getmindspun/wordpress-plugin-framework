@@ -39,7 +39,7 @@ final class Autoloader {
      * @param string $class The class FQN.
      * @return string
      */
-    private static function wp_path( string $namespace, string $class ) : string {
+    private static function wp_path( string $namespace, string $class ): string {
         $dir = self::$namespaces[ $namespace ]['dir'];
         $file = str_replace( '\\', '/', substr( $class, strlen( $namespace ) ) );
         $file = dirname( $file ) . '/class-' . self::wp_name( basename( $file ) ) . '.php';
@@ -53,7 +53,7 @@ final class Autoloader {
      * @param string $class The class FQN.
      * @return string
      */
-    private static function psr4_path( string $namespace, string $class ) : string {
+    private static function psr4_path( string $namespace, string $class ): string {
         $dir = self::$namespaces[ $namespace ]['dir'];
         $file = str_replace( '\\', '/', substr( $class, strlen( $namespace ) ) ) . '.php';
         return preg_replace( '#/+#', '/', $dir . '/' . $file );
@@ -66,7 +66,7 @@ final class Autoloader {
      *
      * @return bool
      */
-    public static function callback( string $class ) : bool {
+    public static function callback( string $class ): bool {
         foreach ( array_keys( self::$namespaces ) as $namespace ) {
             if ( strpos( $class, $namespace ) === 0 ) {
                 $path = '';
