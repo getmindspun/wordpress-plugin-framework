@@ -30,6 +30,10 @@ class GlobalsProvider extends Provider {
      * @return mixed
      */
     public function __call( string $method, $args ) {
+        $_SERVER['call_user_func'] = array(
+            'method' => $method,
+            'args' => $args,
+        );
         return call_user_func( $method, ...$args );
     }
 
