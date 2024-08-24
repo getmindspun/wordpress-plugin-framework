@@ -18,6 +18,16 @@ class Utils {
         return strtolower( preg_replace( array( '/([a-z\d])([A-Z])/', '/([^_])([A-Z][a-z])/' ), '$1_$2', $str ) );
     }
 
+    /**
+     * Convert CamelCase class to param style name.
+     *
+     * @param string $str The CamelCase string.
+     *
+     * @return string
+     */
+    public static function param_case( string $str ): string {
+        return strtolower( preg_replace( array( '/([a-z\d])_?([A-Z])/', '/([^-])([A-Z][a-z])/' ), '$1-$2', $str ) );
+    }
 
     /**
      * Gets the class short name without the namespace.

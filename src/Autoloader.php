@@ -22,17 +22,6 @@ final class Autoloader {
     private static bool $registered = false;
 
     /**
-     * Convert CamelCase class to WordPress-style name.
-     *
-     * @param string $str The CamelCase string.
-     *
-     * @return string
-     */
-    private static function wp_name( string $str ): string {
-        return strtolower( preg_replace( array( '/([a-z\d])([A-Z])/', '/([^-])([A-Z][a-z])/' ), '$1-$2', $str ) );
-    }
-
-    /**
      * Generates a WordPress class path.
      *
      * @param string $namespace The class namespace.
@@ -42,7 +31,7 @@ final class Autoloader {
     private static function wp_path( string $namespace, string $class ): string {
         $dir = self::$namespaces[ $namespace ]['dir'];
         $file = str_replace( '\\', '/', substr( $class, strlen( $namespace ) ) );
-        $file = dirname( $file ) . '/class-' . self::wp_name( basename( $file ) ) . '.php';
+        $file = dirname( $file ) . '/class-' . Utils::param_case( basename( $file ) ) . '.php';
         return preg_replace( '#/+#', '/', $dir . '/' . $file );
     }
 

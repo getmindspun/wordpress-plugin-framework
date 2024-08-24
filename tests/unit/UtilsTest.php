@@ -38,4 +38,12 @@ class UtilsTest extends TestCase {
         self::assertTrue( Utils::rmdir( $dir ) );
         self::assertFalse( Utils::rmdir( $dir ) );
     }
+
+    public function test_param_case() {
+        self::assertEquals( 'my-class', Utils::param_case( 'my-class' ) );
+        self::assertEquals( 'my-class', Utils::param_case( 'MyClass' ) );
+        self::assertEquals( 'my-api', Utils::param_case( 'MyAPI' ) );
+        self::assertEquals( 'my-class', Utils::param_case( 'My_Class' ) );
+        self::assertEquals( 'class', Utils::param_case( 'Class' ) );
+    }
 }
